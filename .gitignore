@@ -1,3 +1,10 @@
+.php_cs
+.php_cs.cache
 .phpunit.result.cache
 /.idea
 /.vscode
+build
+phpunit.xml
+psalm.xml
+vendor
+.php-cs-fixer.cache
