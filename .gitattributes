@@ -1,0 +1,6 @@
+/.gitattributes
+/.gitignore
+/.editorconfig
+/.github
+/tests
+/phpunit.xml.dist
