@@ -4,7 +4,6 @@
 /.idea
 /.vscode
 build
-phpunit.xml
 composer.lock
 vendor
 .php-cs-fixer.cache
