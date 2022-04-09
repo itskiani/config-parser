@@ -1,2 +1,2 @@
 # ConfigParser
-A config-parser is a PHP configuration parser with the caching system for different formats.
+A config-parser is a PHP configuration parser with caching and supports different formats.
