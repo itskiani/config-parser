@@ -9,14 +9,14 @@ trait Cached
     protected function addIntoCache($key, $val)
     {
         $this->cached[$key] = $val;
+
         return $val;
     }
 
-    protected function existsInCache($key) :bool
+    protected function existsInCache($key): bool
     {
         return isset($this->cache[$key]);
     }
-
 
     protected function inCache($key)
     {

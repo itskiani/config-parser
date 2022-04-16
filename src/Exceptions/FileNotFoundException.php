@@ -1,6 +1,7 @@
 <?php
 
 namespace ItsKiani\ConfigParser\Exceptions;
+
 use Exception;
 
 class FileNotFoundException extends Exception

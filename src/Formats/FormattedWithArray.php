@@ -18,10 +18,10 @@ class FormattedWithArray implements Parser
     {
         $parsed = [];
 
-        foreach ($this->files as $key => $val){
+        foreach ($this->files as $key => $val) {
             try {
                 $parsed[$key] = $val;
-            }catch (FileNotFoundException $e){
+            } catch (FileNotFoundException $e) {
                 echo $e->getMessage().' '.$e->getFile().' '.$e->getLine().PHP_EOL;
             }
         }

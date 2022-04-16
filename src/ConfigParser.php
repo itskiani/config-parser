@@ -10,8 +10,9 @@ class ConfigParser
 
     protected array $processed;
 
-    public function process($key){
-        if($this->selection($key)){
+    public function process($key)
+    {
+        if ($this->selection($key)) {
             return $this->inCache($key);
         }
 
@@ -25,20 +26,21 @@ class ConfigParser
     {
         $filtered = $this->processed;
 
-        foreach (explode('.', $key) as $part){
-            if ($this->isExists($filtered, $part)){
+        foreach (explode('.', $key) as $part) {
+            if ($this->isExists($filtered, $part)) {
                 $filtered = $filtered[$part];
+
                 continue;
             }
+
             return;
         }
 
         return $filtered;
     }
 
-    protected function isExists(array $processed, $key) :bool
+    protected function isExists(array $processed, $key): bool
     {
         return array_key_exists($key, $processed);
     }
-
 }

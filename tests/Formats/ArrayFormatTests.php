@@ -3,7 +3,6 @@
 namespace ItsKiani\ConfigParser\Tests;
 
 use ItsKiani\ConfigParser\Formats\FormattedWithArray;
-use ItsKiani\ConfigParser\Tests\TestCase;
 
 class ArrayFormatTests extends TestCase
 {
@@ -20,6 +19,5 @@ class ArrayFormatTests extends TestCase
      */
     public function parseArrayFormat()
     {
-
     }
 }
