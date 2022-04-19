@@ -1,8 +1,9 @@
 <?php
 
-namespace ItsKiani\ConfigParser\Tests;
+namespace ItsKiani\ConfigParser\Tests\Formats;
 
 use ItsKiani\ConfigParser\Formats\FormattedWithArray;
+use ItsKiani\ConfigParser\Tests\TestCase;
 
 class ArrayFormatTests extends TestCase
 {
@@ -10,7 +11,9 @@ class ArrayFormatTests extends TestCase
 
     protected function set_up()
     {
-        $this->arrayFormat = new FormattedWithArray();
+        $this->arrayFormat = new FormattedWithArray([
+            'app' => __DIR__.'/../Mocks/Config/app.php',
+        ]);
     }
 
     /**
