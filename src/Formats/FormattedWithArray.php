@@ -9,11 +9,17 @@ class FormattedWithArray implements Parser
 {
     protected array $files;
 
+    /**
+     * @param array $files
+     */
     public function __construct(array $files)
     {
         $this->files = $files;
     }
 
+    /**
+     * @return array
+     */
     public function parse(): array
     {
         $parsed = [];

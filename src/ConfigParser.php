@@ -10,7 +10,11 @@ class ConfigParser
 
     protected array $processed;
 
-    public function process($key)
+    /**
+     * @param $key
+     * @return mixed
+     */
+    public function process($key): mixed
     {
         if ($this->selection($key)) {
             return $this->inCache($key);
@@ -22,6 +26,11 @@ class ConfigParser
         );
     }
 
+
+    /**
+     * @param $key
+     * @return array|mixed|void
+     */
     protected function selection($key)
     {
         $filtered = $this->processed;
@@ -39,6 +48,12 @@ class ConfigParser
         return $filtered;
     }
 
+
+    /**
+     * @param array $processed
+     * @param $key
+     * @return bool
+     */
     protected function isExists(array $processed, $key): bool
     {
         return array_key_exists($key, $processed);
