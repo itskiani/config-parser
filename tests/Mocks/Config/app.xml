@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <app>
+        <name>Config Parser</name>
+        <description>A php config parser</description>
+    </app>
+    <config>
+        <cache>true</cache>
+    </config>
+</root>
