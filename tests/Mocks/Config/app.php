@@ -1,5 +1,9 @@
 <?php
 
 return [
-    'test' => true,
+    'app' => [
+        'name' => 'Config Parser',
+        'description' => 'A php config parser',
+    ],
+    'cache' => true,
 ];
